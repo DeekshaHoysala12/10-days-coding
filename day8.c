@@ -5,9 +5,9 @@ int main() {
     int i,a[50];
     float pos_count=0,neg_count=0,zero_count=0;
     float pc,nc,zc;
-    printf("enter the number of array elements\n");
+    
     scanf("%f",&n);
-    printf("enter array elements\n");
+    
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
