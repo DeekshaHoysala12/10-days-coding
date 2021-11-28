@@ -2,7 +2,7 @@ def isVowel(ch):
     return (ch == 'a' or ch == 'e' or
             ch == 'i' or ch == 'o' or
             ch == 'u')
-str=input("Enter a string less than 20 characters ")
+str=input()
 strn=str.split()
 result1 = 0
 result2 =0
