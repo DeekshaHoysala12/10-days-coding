@@ -1,6 +1,6 @@
-s=input("Enter a string ")
+s=input("Enter the String: ")
 
 if s==s[::-1]:
-     print("The entered string "+s+" is a palindrome")
+     print("The given String "+s+" is a PALINDROME")
 else:
-    print("The entered string "+s+" is not a palindrome")
+    print("The given String "+s+" is not a PALINDROME")
