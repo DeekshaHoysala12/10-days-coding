@@ -1,5 +1,5 @@
-num=int(input("enter a number"))
-digit=int(input("enter a number for frequency finding "))
+num=int(input("Enter the Number: "))
+digit=int(input("Enter the Digit: "))
 
 count = 0
 
@@ -14,4 +14,4 @@ while n != 0:
         count+=1
 
     n = n // 10
-print(digit,"occured",count,"number of times")
+print("Digit Frequency of the given Digit is ",count,".")
