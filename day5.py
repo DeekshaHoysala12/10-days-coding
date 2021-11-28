@@ -1,4 +1,4 @@
-n=int(input("Enter n "))
+n=int(input("Enter N : "))
 size=2*n-1
 a=[[0 for i in range(size)]for j in range(size)]
 for i in range(n):    
