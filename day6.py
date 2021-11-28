@@ -1,23 +1,19 @@
-def isVowel(ch):
-    return (ch == 'a' or ch == 'e' or
-            ch == 'i' or ch == 'o' or
-            ch == 'u')
-str=input()
-strn=str.split()
-result1 = 0
-result2 =0
-count = 0
-sum=0
-for i in strn:
-    
-    for j in i:
- 
-        if (isVowel(j)):
-            count += 1
-    if (count % 2 == 1):
-        result1 += 1
-                
-    else:
-        result2 += 1
-sum=result1+result2
-print(sum)
+def is_vowel(letter):
+    return letter in ['a', 'e', 'i', 'o', 'u']
+
+def score_words(words):
+    score = 0
+    for word in words:
+        num_vowels = 0
+        for letter in word:
+            if is_vowel(letter):
+                num_vowels += 1
+        if num_vowels % 2 == 0:
+            score += 2
+        else:
+            score += 1
+    return score
+
+n = int(input())
+words = input().split()
+print(score_words(words))
