@@ -4,21 +4,15 @@ int main()
 {
     int length, i;
     int arr[length];
-    printf("Enter size of the array: ");
+    printf("Enter the Array Size : ");
     scanf("%d", &length);
-    printf("Enter elements in array: ");
+    printf("Enter the Array: ");
     for(i=0; i<length; i++)
     { 
         scanf("%d", &arr[i]);
     }
-    printf("\nArray elements ");
-   
-    for (int i = 0; i < length; i++) {     
-        printf("%d ", arr[i]);     
-    }      
-        
-     printf("\n");
-     printf("\nArray elements in reverse order ");
+    
+     printf("Reverse Array: ");
     for (int i = length-1; i >= 0; i--) {     
         printf("%d ", arr[i]);     
     }   
