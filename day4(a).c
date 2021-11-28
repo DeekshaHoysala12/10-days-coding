@@ -2,17 +2,14 @@
 
 int main() {
     int a[100],key,n,i,index;
-    printf("Enter the number of elements in an array\n");
+    printf("Enter the Array Size : ");
     scanf("%d",&n);
-    printf("Enter array elements\n");
+    printf("Enter the Array: ");
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    printf("The array elements are\n");
-    for(i=0;i<n;i++){
-        printf("%d\n",a[i]);
-    }
-    printf("Enter the key element to be found\n");
+    
+    printf("Enter the element to be searched: ");
     scanf("%d",&key);
     for(i=0;i<n;i++){
         if(a[i]==key){
@@ -23,7 +20,7 @@ int main() {
         
     }
     if(index==i){
-        printf("The entered element %d is found in %d index",key,i);
+        printf("The element is present in index %d",i);
     }
     else{
             printf("The entered element not found");
